@@ -11,6 +11,15 @@
     k create ns echoserver
     k apply -f ionos_prd/external-dns-ionos-webhook/test-ingress/echoserver_app_no_domain.yaml
     curl http://212.132.90.194/test
+
+    # cert manager
+    kubectl apply -f applications_prd/cert-manager.yaml -n argocd
+
+    # ArgoCD
+    - adapt /argocd/configmap.yaml (url, clientID)
+    - adapt /argocd/ingress.yaml (cert-manager.io/cluster-issuer, host, hosts)
+    - adapt /argocd/github-selaed-secret.yaml - generate secret based on GitHub secret
+
     
 
 

@@ -56,3 +56,7 @@ spec:
                 name: echoserver-test
                 port:
                   number: 80
+  tls:
+    - hosts:
+        - argocd.dome-marketplace-prd.org
+      secretName: argocd-server-tls # as expected by argocd-server

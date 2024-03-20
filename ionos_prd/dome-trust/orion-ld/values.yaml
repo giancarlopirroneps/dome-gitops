@@ -25,20 +25,20 @@ orion:
     initEnabled: true
     hook: post-install, post-upgrade
     entities:
-      - name: "onboarding.dome-marketplace.org"
+      - name: "onboarding.dome-marketplace-prd.org"
         data: |
           {
             "@context": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-            "id": "urn:ngsi-ld:TrustedIssuer:did:web:onboarding.dome-marketplace.org",
+            "id": "urn:ngsi-ld:TrustedIssuer:did:web:onboarding.dome-marketplace-prd.org",
             "type": "TrustedIssuer",
             "issuer": {
                 "type": "Property",
-                "value": "did:web:onboarding.dome-marketplace.org"
+                "value": "did:web:onboarding.dome-marketplace-prd.org"
             },
             "selfDescription": {
                 "type": "Property",
                 "value": {
-                    "id": "did:web:onboarding.dome-marketplace.org",
+                    "id": "did:web:onboarding.dome-marketplace-prd.org",
                     "type": "gx:LegalParticipant",
                     "gx:legalName": "Marketplcae Onboarding Service"
                 }

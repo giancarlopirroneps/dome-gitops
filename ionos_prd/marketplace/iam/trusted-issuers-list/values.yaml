@@ -37,7 +37,7 @@ trusted-issuers-list:
       # allow ourself to issue credentials
       - name: dome-marketplace
         issuer:
-          did: "did:web:dome-marketplace.org"
+          did: "did:web:dome-marketplace-prd.org"
           credentials:
             - validFor:
                 from: "2023-07-21T17:32:28Z"

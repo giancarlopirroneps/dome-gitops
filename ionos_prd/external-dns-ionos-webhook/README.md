@@ -13,7 +13,7 @@ Create Zone for the domain(s) to be used in Ionos DNS API via:
     "properties":{
     "description": "desc",
     "enabled": true,
-    "zoneName": "example-dome-marketplace.org"
+    "zoneName": "example-dome-marketplace-prd.org"
     }
     }'
 

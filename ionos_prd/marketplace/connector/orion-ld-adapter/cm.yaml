@@ -5,7 +5,7 @@ metadata:
 data:
   external-config.yml: |
     broker:
-      externalDomain: https://kong.dome-marketplace.org/scorpio
+      externalDomain: https://kong.dome-marketplace-prd.org/scorpio
       internalDomain: http://scorpio:1026
       paths:  
         entities: /ngsi-ld/v1/entities

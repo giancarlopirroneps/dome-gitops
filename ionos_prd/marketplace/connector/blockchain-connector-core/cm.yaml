@@ -15,7 +15,7 @@ data:
         entityTypes: > 
           product-offering
     broker:
-      externalDomain: https://kong.dome-marketplace.org/scorpio
+      externalDomain: https://kong.dome-marketplace-prd.org/scorpio
       internalDomain: http://scorpio:1026
     ngsi-subscription: 
       notificationEndpoint: http://blockchain-connector-core:8080/notifications/broker

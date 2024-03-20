@@ -5,11 +5,11 @@ metadata:
   labels:
     {{ include "tmforum.labels" $ | nindent 4 }}
   annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+    cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
 spec:
   ingressClassName: nginx
   rules:
-  - host: tmforum-doc.dome-marketplace.org
+  - host: tmforum-doc.dome-marketplace-prd.org
     http:
       paths:
       - path: /
@@ -21,5 +21,5 @@ spec:
               name: http
   tls:
   - hosts:
-    - tmforum-doc.dome-marketplace.org
+    - tmforum-doc.dome-marketplace-prd.org
     secretName: tmforum-doc-tls

@@ -8,13 +8,13 @@ tm-forum-api:
   ingress:
     enabled: true
     annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+      cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
     # -- host to be used
     hosts:
-      - host: tmforum.dome-marketplace.org
+      - host: tmforum.dome-marketplace-prd.org
     tls:
     - hosts:
-      - tmforum.dome-marketplace.org
+      - tmforum.dome-marketplace-prd.org
       secretName: tmforum-tls 
 
   apiProxy:

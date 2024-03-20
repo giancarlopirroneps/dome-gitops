@@ -53,7 +53,7 @@ business-api-ecosystem:
     enabled: true
     clientId: marketplace-client
     verifier:
-      host: https://verifier.dome-marketplace.org
+      host: https://verifier.dome-marketplace-prd.org
     allowedRoles:
       - seller
       - customer
@@ -67,14 +67,14 @@ business-api-ecosystem:
         didRead: 
           - type: "VerifiableCredential"
             trustedParticipantsLists: [
-              "https://tir.dome-marketplace.org"
+              "https://tir.dome-marketplace-prd.org"
             ]
             trustedIssuersLists: [
               "http://trusted-issuers-list:8080"
             ]
           - type: "LegalPersonCredential"
             trustedParticipantsLists: [
-              "https://tir.dome-marketplace.org"
+              "https://tir.dome-marketplace-prd.org"
             ]
             trustedIssuersLists: [
               "http://trusted-issuers-list:8080"
@@ -82,20 +82,20 @@ business-api-ecosystem:
         defaultScope:
           - type: "VerifiableCredential"
             trustedParticipantsLists: [
-              "https://tir.dome-marketplace.org"
+              "https://tir.dome-marketplace-prd.org"
             ]
             trustedIssuersLists: [
               "http://trusted-issuers-list:8080"
             ]
           - type: "LegalPersonCredential"
             trustedParticipantsLists: [
-              "https://tir.dome-marketplace.org"
+              "https://tir.dome-marketplace-prd.org"
             ]
             trustedIssuersLists: [
               "http://trusted-issuers-list:8080"
             ]
 
-  externalUrl: https://dome-marketplace.org
+  externalUrl: https://dome-marketplace-prd.org
 
   bizEcosystemChargingBackend:
 
@@ -155,13 +155,13 @@ business-api-ecosystem:
       enabled: true
       className: nginx
       annotations:
-        cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+        cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
       tls: 
        -  hosts: 
-            - dome-marketplace.org
+            - dome-marketplace-prd.org
           secretName: walt-id-vcwaltid-tls-sec
       hosts: 
-        - host: dome-marketplace.org
+        - host: dome-marketplace-prd.org
           paths: 
             - "/"
 

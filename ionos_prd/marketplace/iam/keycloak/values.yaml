@@ -28,9 +28,9 @@ keycloak:
   ingress:
     enabled: true
     ingressClassName: nginx
-    hostname: keycloak.dome-marketplace.org
+    hostname: keycloak.dome-marketplace-prd.org
     annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+      cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
     tls: true
 
 
@@ -57,7 +57,7 @@ keycloak:
   - name: KEYCLOAK_LOG_LEVEL
     value: INFO
   - name: VCISSUER_ISSUER_DID
-    value: "did:web:dome-marketplace.org"
+    value: "did:web:dome-marketplace-prd.org"
   - name: VCISSUER_WALTID_ADDRESS
     value: "http://walt-id-vcwaltid"
 

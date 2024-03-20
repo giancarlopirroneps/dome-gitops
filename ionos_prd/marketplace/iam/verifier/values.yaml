@@ -12,8 +12,8 @@ vcverifier:
     ssikit:
       auditorUrl: http://walt-id-vcwaltid:7003
     verifier:
-      tirAddress: https://tir.dome-marketplace.org/v3/issuers
-      did: did:web:dome-marketplace.org
+      tirAddress: https://tir.dome-marketplace-prd.org/v3/issuers
+      did: did:web:dome-marketplace-prd.org
     configRepo:
       configEndpoint: http://credentials-config-service:8080/
         
@@ -33,15 +33,15 @@ vcverifier:
   ingress:
     enabled: true
     annotations: 
-      cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+      cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
     className: nginx
     hosts:
-      - host: verifier.dome-marketplace.org
+      - host: verifier.dome-marketplace-prd.org
         paths:  
           - "/"
     tls:
       - hosts: 
-          - verifier.dome-marketplace.org
+          - verifier.dome-marketplace-prd.org
         secretName: verifier-tls-sec
 
 
@@ -65,7 +65,7 @@ vcverifier:
           
           <body>
               <div class="w3-bar w3-card color-primary w3-margin-bottom w3-large">
-                  <a class="w3-bar-item w3-right" href="https://dome-marketplace.org"><img src="/static/img/logo-white.svg" alt="DOME Marketplace" style="width:222px;height:50px;">
+                  <a class="w3-bar-item w3-right" href="https://dome-marketplace-prd.org"><img src="/static/img/logo-white.svg" alt="DOME Marketplace" style="width:222px;height:50px;">
                   </a>
               </div>
               <main class="w3-container w3-center">

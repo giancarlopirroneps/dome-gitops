@@ -43,8 +43,8 @@ kong:
       enabled: true
       ingressClassName: nginx
       annotations:
-        cert-manager.io/cluster-issuer: letsencrypt-aws-prod
-      hostname: kong.dome-marketplace.org
+        cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
+      hostname: kong.dome-marketplace-prd.org
       tls: kong-tls-sec
   
   admin:

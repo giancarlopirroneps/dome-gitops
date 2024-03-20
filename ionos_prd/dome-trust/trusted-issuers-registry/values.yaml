@@ -7,15 +7,15 @@ trusted-issuers-registry:
   ingress:
     enabled: true
     annotations: 
-      cert-manager.io/cluster-issuer: letsencrypt-aws-prod
+      cert-manager.io/cluster-issuer: letsencrypt-prd-issuer
     className: nginx
     hosts: 
-      - host: tir.dome-marketplace.org
+      - host: tir.dome-marketplace-prd.org
         paths:
           - "/"
     tls: 
       - hosts: 
-        - tir.dome-marketplace.org
+        - tir.dome-marketplace-prd.org
         secretName: trusted-issuers-registry-tls-sec
 
   additionalEnvVars:

@@ -10,9 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ionos/namespaces
+    path: ionos_prd/namespaces
     repoURL: https://github.com/DOME-Marketplace/dome-gitops
-    targetRevision: HEAD
+    targetRevision: env_production
   syncPolicy:
     automated:
       prune: true

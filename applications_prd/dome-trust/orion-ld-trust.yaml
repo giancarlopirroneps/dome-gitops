@@ -11,9 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ionos/dome-trust_sbx/orion-ld
-    repoURL: https://github.com/bialask-daiteap/dome-gitops
-    targetRevision: HEAD
+    path: ionos_prd/dome-trust/orion-ld
+    repoURL: https://github.com/DOME-Marketplace/dome-gitops
+    targetRevision: env_production
   syncPolicy:
     automated:
       prune: true

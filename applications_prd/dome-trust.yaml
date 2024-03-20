@@ -12,8 +12,8 @@ spec:
   project: default
   source:
     path: applications_sbx/dome-trust
-    repoURL: https://github.com/bialask-daiteap/dome-gitops
-    targetRevision: HEAD
+    repoURL: https://github.com/DOME-Marketplace/dome-gitops
+    targetRevision: env_production
   syncPolicy:
     automated:
       prune: true

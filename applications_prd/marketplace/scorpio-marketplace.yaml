@@ -11,9 +11,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: ionos/marketplace_sbx/scorpio
-    repoURL: https://github.com/bialask-daiteap/dome-gitops
-    targetRevision: HEAD
+    path: ionos_prd/marketplace/scorpio
+    repoURL: https://github.com/DOME-Marketplace/dome-gitops
+    targetRevision: env_production
   syncPolicy:
     automated:
       prune: true

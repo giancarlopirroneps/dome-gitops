@@ -24,6 +24,7 @@
     # Fix github-secret Sealed Secret
     
     # Generate and apply Sealed Secrets
+    kubectl apply -f ionos_prd/marketplace/webhook/webhook-tls-sealed-secret.yaml
 
     
 

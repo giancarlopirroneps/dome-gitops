@@ -19,6 +19,11 @@
     - adapt /argocd/configmap.yaml (url, clientID)
     - adapt /argocd/ingress.yaml (cert-manager.io/cluster-issuer, host, hosts)
     - adapt /argocd/github-selaed-secret.yaml - generate secret based on GitHub secret
+    kubectl apply -f applications_prd/argocd.yaml -n argocd
+    # confirm that URL https://argocd.dome-marketplace-prd.org/ is available and SSL is working
+    # Fix github-secret Sealed Secret
+    
+    # Generate and apply Sealed Secrets
 
     
 

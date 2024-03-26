@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: applications_sbx/marketplace
+    path: applications_prd/marketplace
     repoURL: https://github.com/DOME-Marketplace/dome-gitops
     targetRevision: env_production
   syncPolicy:

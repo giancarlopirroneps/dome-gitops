@@ -4,10 +4,10 @@ resources:
   #- path: deployment_replica_count.yaml
   #  target:
   #    kind: Deployment
-  #- path: deployment_image.yaml
-  #  target:
-  #    kind: Deployment
-  #    name: scorpio
+  - path: deployment_image.yaml
+    target:
+      kind: Deployment
+      name: nginx-deployment-kustomize 
   #- path: deployment_envvars.yaml
   #  target:
   #    kind: Deployment

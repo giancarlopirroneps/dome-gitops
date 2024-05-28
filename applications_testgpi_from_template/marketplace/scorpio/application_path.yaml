@@ -3,4 +3,4 @@
   value: "ionos_testgpi_from_template/marketplace/scorpio"
 - op: replace
   path: /spec/source/repoURL
-  value: "https://github.com/giancarlopirroneps/dome-gitops/tree/env_dev"
+  value: "https://github.com/giancarlopirroneps/dome-gitops"

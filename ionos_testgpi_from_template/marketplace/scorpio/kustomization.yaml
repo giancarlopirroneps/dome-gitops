@@ -1,6 +1,6 @@
 resources:
 - test-deployment.yaml
-  #patches:
+patches:
   #- path: deployment_replica_count.yaml
   #  target:
   #    kind: Deployment

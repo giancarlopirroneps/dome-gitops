@@ -1,5 +1,5 @@
 resources:
-- test-deployment.yaml
+- ../../../ionos_template/marketplace/test-deployment
 patches:
   #- path: deployment_replica_count.yaml
   #  target:
